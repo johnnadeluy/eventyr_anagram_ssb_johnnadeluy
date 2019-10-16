@@ -16,9 +16,9 @@ public class Main {
         //  leser eventyr.txt linje for linje.
         //  hvert ord lagres i en streng og legges inn i
         //  en ArrayList
-        while(eventyrFilLeser.readLine() != null){
-            String eventyrTxt = eventyrFilLeser.readLine();
 
+        String eventyrTxt;
+        while((eventyrTxt = eventyrFilLeser.readLine()) != null){
             eventyrOrdliste.add(eventyrTxt);
         }
 
@@ -26,9 +26,8 @@ public class Main {
         BufferedReader nsfFilLeser = new BufferedReader(new FileReader(nsfFil));
         ArrayList<String> nsfOrdliste = new ArrayList<>();
 
-        while(nsfFilLeser.readLine() != null){
-            String nsfTxt = nsfFilLeser.readLine();
-
+        String nsfTxt;
+        while((nsfTxt = nsfFilLeser.readLine()) != null){
             nsfOrdliste.add(nsfTxt);
         }
 
